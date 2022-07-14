@@ -20,6 +20,7 @@ function Food({food, handleDelete, handleEditFood}) {
 
     handleEditFood(food);
   }
+  
   return (
     <Container available={isAvailable}>
       <header>

@@ -1,10 +1,30 @@
-import { Component, useState } from 'react';
+import { useState } from 'react';
 import { FiEdit3, FiTrash } from 'react-icons/fi';
 
-import { Container } from './styles';
+// import { Container } from './styles';
 import api from '../../services/api';
+import React from 'react';
+import { Container } from './styles';
 
-function Food({food, handleDelete, handleEditFood}) {
+interface PropsFood {
+  id: number;
+  available: boolean;
+  description: string;
+  image: string;
+  name: string;
+  price: string;
+}
+
+
+interface PropsFood {
+  food: PropsFood;
+  handleDelete: (food: PropsFood) => void;
+  handleEditFood: (food: PropsFood) => void;
+  // available: boolean;
+}
+
+function Food({food, handleDelete, handleEditFood}: PropsFood) {
+  console.log(food)
   const [isAvailable, setIsAvailable] = useState(true)
 
   async function toggleAvailable() {
@@ -46,7 +66,8 @@ function Food({food, handleDelete, handleEditFood}) {
           <button
             type="button"
             className="icon"
-            onClick={() => handleDelete(food.id)}
+            onClick={() => handleDelete(food)}
+            // onClick={() => handleDelete(food.id)}
             data-testid={`remove-food-${food.id}`}
           >
             <FiTrash size={20} />

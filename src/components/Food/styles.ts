@@ -1,6 +1,18 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+// interface Props{
+//     className?: string;
+//     fontSize?: any;
+//     color?: string;
+// }
+
+// export const PageText:React.FC <Props> = ({className, children}) => {
+//   return (
+//      <span className={className}>{children}</span>
+//   )
+// }
+
+export const Container = styled("div")<{available: boolean}>`
   background: #f0f0f5;
   border-radius: 8px;
 

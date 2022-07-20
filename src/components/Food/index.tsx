@@ -8,7 +8,7 @@ import { Container } from './styles';
 
 interface PropsFood {
   id: number;
-  available: boolean;
+  available: string;
   description: string;
   image: string;
   name: string;
@@ -16,15 +16,14 @@ interface PropsFood {
 }
 
 
-interface PropsFood {
+interface PropsFoods {
   food: PropsFood;
   handleDelete: (food: PropsFood) => void;
   handleEditFood: (food: PropsFood) => void;
   // available: boolean;
 }
 
-function Food({food, handleDelete, handleEditFood}: PropsFood) {
-  console.log(food)
+function Food({food, handleDelete, handleEditFood}: PropsFoods) {
   const [isAvailable, setIsAvailable] = useState(true)
 
   async function toggleAvailable() {

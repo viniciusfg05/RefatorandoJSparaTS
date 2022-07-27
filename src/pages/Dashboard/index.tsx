@@ -24,7 +24,7 @@ function Dashboard() {
 
 
 
-  const foodsss = {foods}
+  // const foodsss = {foods}
 
   useEffect(() => {
     async function getdata() {
@@ -43,8 +43,7 @@ function Dashboard() {
   }
 
   async function handleAddFood(data: foodProps) {
-
-
+    
     try {
 
       const foodsAdd = await api.post('/foods', {
@@ -56,8 +55,7 @@ function Dashboard() {
           price: data.price
       })
 
-      setfoods(foodsAdd.data)
-      console.log(foods)
+      setfoods([...foods, foodsAdd.data])
 
     } catch (err) {
       console.log(err)

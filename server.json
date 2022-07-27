@@ -9,60 +9,12 @@
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
     },
     {
-      "available": false,
-      "id": 10,
-      "image": "Viniciusgggggggggg",
-      "name": "'Vinicusgggggggggg",
-      "price": "199999ggggggg",
-      "description": "Vijni9cusggggggggggg"
-    },
-    {
-      "description": "",
-      "image": "fff",
-      "name": "",
+      "description": "Compra do sabonete, Compra do sabonete, Compra do sabonete,Compra do sabonete ,Compra do sabonete ",
+      "image": "https://images.unsplash.com/photo-1658728942154-fda98dc26f65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      "name": "Cartao de credito",
       "available": true,
-      "price": "",
-      "id": 23
-    },
-    {
-      "description": "",
-      "image": "ffffff",
-      "name": "",
-      "available": true,
-      "price": "",
-      "id": 24
-    },
-    {
-      "description": "",
-      "image": "",
-      "name": "",
-      "available": true,
-      "price": "",
-      "id": 25
-    },
-    {
-      "description": "",
-      "image": "",
-      "name": "",
-      "available": true,
-      "price": "",
-      "id": 26
-    },
-    {
-      "description": "",
-      "image": "f",
-      "name": "",
-      "available": true,
-      "price": "",
-      "id": 27
-    },
-    {
-      "description": "",
-      "image": "fff",
-      "name": "",
-      "available": true,
-      "price": "",
-      "id": 28
+      "price": "19,90",
+      "id": 4
     }
   ]
 }

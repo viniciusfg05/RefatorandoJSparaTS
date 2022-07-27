@@ -24,7 +24,7 @@ interface ModalAddProps {
 function ModalAddFood({ isOpen, setIsOpen, handleAddFood }: ModalAddProps) {
   async function handleSubmit(data: foodProps) {
     await handleAddFood(data)
-    console.log(data)
+    // console.log(data)
     setIsOpen()
   }
 
